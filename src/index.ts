@@ -39,7 +39,7 @@ async function main() {
 
     await fs.promises.writeFile(
       path.join(projectName, ".gitignore"),
-      ["node_modules", "dist", ".env"].join("\n") + "\n"
+      ["node_modules", "dist", ".env", ".DS_Store"].join("\n") + "\n"
     );
 
     console.log(`Created ${projectName}!`);
